@@ -1,0 +1,145 @@
+/*
+**
+** 	General View
+**
+*/
+
+body{
+	background:url('../img/bg.jpg');
+}
+table{
+	background:#fff;
+}
+.navbar a.brand{
+	color:#666;
+}
+.navbar-inner{
+	background: #fff;
+	border-bottom:10px solid #e6e6e6;
+}
+
+table{
+	margin:5px 0;
+}
+.table td.center, .table th.center{
+	text-align:center;
+}
+
+/*
+**
+** 	Overview
+**
+*/
+#utilities{
+	margin:30px 0;
+}
+h1{
+	color:#777;
+	font-family:'Helvetica', sans-serif;
+	font-size:28px;
+	text-shadow: -1px 2px 1px #FFF;
+	font-weight:400;
+	filter: dropshadow(color=#FFF, offx=-1, offy=2);
+}
+h2{
+	color:#777;
+	font-family:'Helvetica', sans-serif;
+	font-size:18px;
+	text-shadow: -1px 2px 1px #FFF;
+	font-weight:400;
+	filter: dropshadow(color=#FFF, offx=-1, offy=2);
+}
+h2 i{
+	margin:3px 5px 0 0;
+	display:inline-block;
+}
+ul#events-list{
+	background:#fff;
+	list-style:none;
+	margin:10px 0;
+}
+ul#events-list li{
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+ul#events-list a{
+	display:block;
+}
+ul#events-list a:hover{
+	text-decoration:none;
+}
+ul#events-list li{
+	background:url('../img/li-arrow.png') right center no-repeat;
+}
+ul#events-list li.odd{
+	background:url('../img/li-arrow.png') right center no-repeat #f9f9f9;
+}
+ul#events-list li:hover{
+	background:url('../img/li-arrow.png') right center no-repeat #EBF2FC;
+}
+p.event-date{
+	color:#888;
+}
+p.event-name{
+	color:#555;
+	font-size:24px;
+}
+
+#recent-activity ul{
+	list-style:none;
+	margin:0;
+}
+#recent-activity li{
+	margin:5px 0;
+}
+#recent-activity span{
+	border-right:1px solid #999;
+	display:inline-block;
+	margin:0 5px 0 0;
+	padding-right:5px;
+	text-align:right;
+	width:25px;
+}
+
+/*
+**
+** 	Event View
+**
+*/
+
+.event-view{
+}
+#show-counts p{
+	font-size:24px;
+	text-align:right;
+}
+.event-view h1{
+	font-size:42px;
+	margin:10px 0 0 0;
+}
+
+.event-view-attendees, .event-view-participants{
+	font-size:36px;
+}
+
+@media screen and (min-width:320px) {
+}
+@media screen and (min-width:480px) {
+}
+@media screen and (min-width:768px) {
+
+	#upcoming-events li:hover{
+		@include scale(1.01);
+		@include transition(.1s);
+		@include box-shadow(1px, 1px, 8px, #999);
+	}
+}
+@media screen and (min-width:980px) {
+	#utilities{
+		display:none;
+	}
+}
+
+@media screen and (min-width:1200px) {
+}	
+@media screen and (min-width:1920px) {}
