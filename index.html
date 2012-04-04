@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Coordinate by jakelear</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Coordinate</h1>
+        <p>Event coordination app built in rails</p>
+        <p class="view"><a href="https://github.com/jakelear/Coordinate">View the Project on GitHub <small>jakelear/Coordinate</small></a></p>
+        <ul>
+          <li><a href="https://github.com/jakelear/Coordinate/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jakelear/Coordinate/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jakelear/Coordinate">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>Coordinate is a responsively designed web application built in Rails for managing large events, such as conferences and exhibitions. The product will enable event coordinators to manage many aspects of events, including venue and floor planning, attendee registration, exhibitor contract management, and eventually post-event reporting. </p>
+
+<h2>Schema</h2>
+
+<p><strong>Events</strong> have a name, start date, end date, hours of operation, and a description. They also have an associated sponsor scheme, venue and floor plan, and associated participants, attendees and associations.</p>
+
+<p><strong>Associations</strong>  will typically have a one to many relationship with events. Some associations may be responsible for multiple events. Associations also have names, descriptions, and contact info.</p>
+
+<p><strong>Participants</strong> and <strong>Attendees</strong> will generally belong to one event but may occasionally belong to many events. (For example, repeat vendors for separate events.)  Participants will be associated with a booth space on a per event basis. Participants refers to vendors or exhibitors, where Attendees refers to the patrons of the event. </p>
+
+<p><strong>Venues</strong> have a name, mailing address, website and pricing information. Venues will also have one or many associated floor plans.</p>
+
+<p><strong>Floor Plans</strong> are associated with a venue and have associated booth spaces. Floor plans have a name and the actual floor plan image.</p>
+
+<p><strong>Booth Spaces</strong> have associated participants on a per-event basis, and store the x position and y position on the floor plan image. </p>
+
+<p><strong>Sponsor Schemes</strong> are essentially collections of <strong>Sponsor Levels</strong> which can then be assigned for an event. Participants in that event can then have designated sponsor levels based on their contract, which may have specific rewards or benefits.</p>
+
+<h2>Design</h2>
+
+<p>Event coordinators will find an interface that adapts to their needs, whether they are in the office planning on the computer months ahead of time, or using the app from the show floor, making last minute changes as the exhibitors arrive.
+<a href="http://jlear.me/coordinate/coord_mobile.png">Coordinate Mobile Overview</a></p>
+
+<h2>Stack</h2>
+
+<ul>
+<li>Rails 3</li>
+<li>MySQL</li>
+<li>SASS</li>
+<li>Modified Responsive Bootstrap</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jakelear">jakelear</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
